@@ -1,0 +1,167 @@
+.description-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container {
+  margin-top: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.product-image {
+ padding: 20px;
+  max-width: 28rem;
+  height: auto;
+  object-fit: cover;
+  transform: scale(1.05);
+  width: 18rem;
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+
+
+.info-container {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.product-title {
+  margin-top: 90px;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+
+}
+
+.product-price,
+.product-rating,
+.product-description {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 17px;
+}
+
+/* Cool color hover effect */
+.product-title:hover {
+  color: #666;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .description-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+}
+.order-section {
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #2f5d06;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='number'] {
+  padding: 5px;
+  width: 50px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #2f5d06;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 10px;
+  border: 2px solid rgb(51, 2, 2);
+
+}
+
+.subtotal {
+  padding: 10px;
+  background-color: #f7f7f7;
+  color: #2f5d06;
+
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #0099ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+a{
+  text-decoration: none;
+}
+.add-to-cart:hover {
+  background-color: #0077cc;
+
+
+}
+.order-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quantity {
+  margin-bottom: 10px;
+}
+
+.subtotal {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .order-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-to-cart {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,85 @@
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .cart-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+
+  .rowcart {
+    display:flex;
+    align-items: center;
+  }
+
+  .cart-img {
+    flex: 1;
+    text-align: center;
+  }
+
+  .cart-img img {
+    width: 150px; /* You can adjust the image size as desired */
+    height: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .cart-details {
+    flex: 1;
+  /* justify-content: center; */
+    /* display:flex; */
+  }
+
+  .cart-details p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+.totalsum-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 80px;
+  background-color: #f9f9f9;
+}
+
+.empty  {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+.emptybasket {
+
+  max-width: 300px; /* Set the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image behaves like a block element */
+  margin: 0 auto;
+}
+
+/* Styling for the total sum */
+.totalsum-box div{
+  font-size: 20px;
+  font-weight: bold;
+  color: green;
+}
+
+@media screen and (max-width: 378px) {
+
+  .emptybasket {
+
+    max-width: 100px; /* Set the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto;
+  }
+
+  .rowcart {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
